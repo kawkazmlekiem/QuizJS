@@ -1,0 +1,12 @@
+@use '../variables';
+
+button{
+    width: 50%;
+    height: 50px;
+    color: variables.$white;
+    border: variables.$b;
+
+    &:hover{
+        background-color: variables.$main;
+    }
+}
