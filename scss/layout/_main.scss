@@ -1,7 +1,8 @@
-@use './variables';
+@use '../variables';
 
 * {
     font-family: Poppins;
+    color: variables.$white;
     background-color: variables.$black;
 }
 

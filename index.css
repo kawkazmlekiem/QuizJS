@@ -4,6 +4,7 @@
 }
 * {
   font-family: Poppins;
+  color: #ffffff;
   background-color: #000000;
 }
 
@@ -11,6 +12,29 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_title {
+  font-size: 55px;
+  color: #fca311;
+}
+.header_timer {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+.header_timer:after {
+  content: url(/public/assets/icons/icon-clock.svg);
+  display: block;
+  width: 25px;
+  height: auto;
+  position: relative;
+  margin-left: 15px;
 }
 
 button {
