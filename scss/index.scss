@@ -1,4 +1,8 @@
 @use './variables';
+@use './font/font';
 
 //Compontnts
 @use './components/btn';
+@use './components/progressBar';
+@use './components/quiz';
+@use './components/timer';

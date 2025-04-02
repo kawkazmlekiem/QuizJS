@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins/Poppins-Regular.ttf);
+}
+* {
+  font-family: Poppins;
+}
+
 button {
   width: 50%;
   height: 50px;
