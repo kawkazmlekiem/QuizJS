@@ -1,0 +1,12 @@
+@use './variables';
+
+* {
+    font-family: Poppins;
+    background-color: variables.$black;
+}
+
+.container {
+    max-width: variables.$valar;
+    margin-left: auto;
+    margin-right: auto;
+}
