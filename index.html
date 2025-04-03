@@ -18,15 +18,27 @@
         <main>
             <div class="container">
                 <section class="quiz">
-                    <div class="quiz_question">
-                        <h2>JavaScript is..?</h2>
-                    </div>
-                    <div class="quiz_answers">
-                        <p>A</p>
-                        <p>B</p>
-                        <p>C</p>
-                        <p>D</p>
-                    </div>
+                    <form class="quiz_question">
+                        <h2>Inside which HTML element do we put the JavaScript?</h2>
+                        <div class="quiz_answers">
+                            <label for="input-1">
+                                <input type="radio" value="1" name="input-1">
+                                &lt;script&gt;
+                            </label>
+                            <label for="input-2">
+                                <input type="radio" value="2" name="input-2">
+                                &lt;js&gt;
+                            </label>
+                            <label for="input-3">
+                                <input type="radio" value="3" name="input-3">
+                                &lt;javascript&gt;
+                            </label>
+                            <label for="input-4">
+                                <input type="radio" value="4" name="input-4">
+                                &lt;scripting&gt;
+                            </label>
+                        </div>
+                    </form>
                     <nav class="nav">
                         <button id="prev">Prev</button>
                         <button id="next">Next</button>

@@ -1,0 +1,35 @@
+@use '../variables';
+
+.quiz {
+    background-color: rgba(variables.$black, .4);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-top: variables.$b2;
+    border-left: variables.$b3;
+    border-radius: 10px;
+    box-shadow: variables.$bs2;
+
+    &_question {
+        margin-bottom: 20px;
+    }
+
+    &_answers {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            height: 30px;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 4px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 5px;
+            }
+
+            &:hover {
+                background-color: variables.$navy;
+            }
+        }
+    }
+}
