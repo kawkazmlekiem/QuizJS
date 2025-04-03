@@ -14,9 +14,15 @@ $navy: #14213d;
 $grey: #e5e5e5;
 $error: #d60202;
 
+//Gradients
+$g1: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(20,33,61,1) 15%, rgba(0,81,255,1) 100%);
+
 //Border
-$b: 1px solid $white;
+$b1: 1px solid $white;
+$b2: 1px solid rgba($white, .4);
+$b3: 1px solid rgba($white, .3);
 
 //BoxShadow
-$bs: 5px 1px 24px -7px rgba(66, 68, 90, 1);
+$bs1: 5px 1px 24px -7px rgba(66, 68, 90, 1);
+$bs2: 3px 3px 3px rgba(0, 0, 0, 0.089);
 
