@@ -1,13 +1,19 @@
 @use '../variables';
 
-* {
+html {
     font-family: Poppins;
     color: variables.$white;
-    background-color: variables.$black;
+    background: variables.$g1;
+    height: 100%;
+}
+
+body {
+    margin: 0;
 }
 
 .container {
     max-width: variables.$valar;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }

@@ -7,30 +7,41 @@
     <title>QuizJS</title>
 </head>
 <body>
-    <div class="container">
         <header class="header">
-            <h1 class="header_title">QuizJS</h1>
-            <div class="header_timer">00:00</div>
+            <div class="container">
+                <div class="header_wrapper">
+                    <h1 class="header_title">QuizJS</h1>
+                    <div class="header_timer">00:00</div>
+                </div>
+            </div>
         </header>
-        <section class="quiz">
-            <div class="question">
-                <h2>JavaScript is..?</h2>
+        <main>
+            <div class="container">
+                <section class="quiz">
+                    <div class="quiz_question">
+                        <h2>JavaScript is..?</h2>
+                    </div>
+                    <div class="quiz_answers">
+                        <p>A</p>
+                        <p>B</p>
+                        <p>C</p>
+                        <p>D</p>
+                    </div>
+                    <nav class="nav">
+                        <button id="prev">Prev</button>
+                        <button id="next">Next</button>
+                    </nav>
+                </section>
+                <section class="progressBar">
+                    <p>Progress...</p>
+                </section>
             </div>
-            <div class="answers">
-                <p>A</p>
-                <p>B</p>
-                <p>C</p>
-                <d>D</d>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer_text">Copyright © 2025, All Rights Reserved</p>
             </div>
-            <nav>
-                <button id="prev">Prev</button>
-                <button id="next">Next</button>
-            </nav>
-            <div class="progressBar">
-                <p>Progress...</p>
-            </div>
-        </section>
-        <footer></footer>
+        </footer>
     </div>
 </body>
 </html>
