@@ -1,0 +1,14 @@
+@use '../variables';
+
+.progressbar {
+    width: 100%;
+    padding: 30px;
+
+    &_bar {
+        display: block;
+        height: 30px;
+        width: 1%;
+        background-color: variables.$main;
+        border-radius: 4px;
+    }
+}

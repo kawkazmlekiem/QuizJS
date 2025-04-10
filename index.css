@@ -98,6 +98,18 @@ body {
   transform: rotateZ(0) translate(10px, 10%);
 }
 
+.progressbar {
+  width: 100%;
+  padding: 30px;
+}
+.progressbar_bar {
+  display: block;
+  height: 30px;
+  width: 1%;
+  background-color: #ffe800;
+  border-radius: 4px;
+}
+
 .quiz {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
