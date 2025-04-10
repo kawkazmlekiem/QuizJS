@@ -4,8 +4,8 @@
 }
 html {
   font-family: Poppins;
-  color: #ffffff;
-  background: linear-gradient(36deg, rgb(2, 0, 36) 0%, rgb(20, 33, 61) 15%, rgb(0, 81, 255) 100%);
+  color: #3e3e3e;
+  background: #ffffff;
   height: 100%;
 }
 
@@ -20,19 +20,22 @@ body {
   margin-right: auto;
 }
 
+.header {
+  background-color: #ffe800;
+  margin-bottom: 50px;
+}
 .header_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header_title {
-  font-size: 55px;
-  color: #fca311;
+  font-size: 45px;
 }
 .header_timer {
   display: flex;
   align-items: center;
-  font-size: 35px;
+  font-size: 30px;
 }
 .header_timer:after {
   content: url(/public/assets/icons/icon-clock.svg);
@@ -51,41 +54,60 @@ body {
   bottom: 0;
   width: 100%;
   height: 150px;
-  background-color: #14213d;
+  background-color: #ffe800;
 }
 .footer_text {
   text-align: center;
 }
 
-button {
-  width: 25%;
-  height: 50px;
-  color: #14213d;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-}
-button:hover {
-  background-color: #fca311;
-}
-
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
+}
+.nav button, .nav .button--prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  color: #14213d;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav button:hover, .nav .button--prev:hover {
+  background-color: #ffe800;
+}
+.nav .button--prev::before {
+  content: url(/public/assets/icons/icon-arrow.svg);
+  display: inline-block;
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
+  transform: rotateZ(180deg);
 }
 
 .quiz {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  padding: 50px;
+  padding: 30px 50px;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
 }
 .quiz_question {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+.quiz_question #question {
+  font-size: 30px;
+  margin-top: 0;
 }
 .quiz_answers {
   display: flex;
@@ -101,7 +123,9 @@ button:hover {
   margin-bottom: 5px;
 }
 .quiz_answers label:hover {
-  background-color: #14213d;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

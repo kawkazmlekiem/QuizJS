@@ -1,6 +1,9 @@
 @use '../variables';
 
 .header {
+    background-color: variables.$main;
+    margin-bottom: 50px;
+
     &_wrapper {
         display: flex;
         justify-content: space-between;
@@ -8,14 +11,13 @@
     }
 
     &_title {
-        font-size: 55px;
-        color: variables.$main;
+        font-size: 45px;
     }
 
     &_timer {
         display: flex;
         align-items: center;
-        font-size: 35px;
+        font-size: 30px;
 
         &:after {
             content: url(/public/assets/icons/icon-clock.svg);
