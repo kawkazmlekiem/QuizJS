@@ -8,6 +8,9 @@
     border-left: variables.$b3;
     border-radius: 10px;
     box-shadow: variables.$bs2;
+    @media screen and (max-width: variables.$dwarf) {
+        padding: 20px;
+    }
 
     &_question {
         margin-bottom: 50px;
@@ -15,6 +18,14 @@
         #question {
             font-size: 30px;
             margin-top: 0;
+
+            @media screen and (max-width: variables.$elf) {
+                font-size: 25px;
+            }
+
+            @media screen and (max-width: variables.$dwarf) {
+                font-size: 22px;
+            }
         }
     }
 
@@ -27,6 +38,10 @@
             padding: 15px;
             font-size: 20px;
             border-radius: 4px;
+            @media screen and (max-width: variables.$elf) {
+                height: 20px;
+                font-size: 18px;
+            } 
 
             &:not(:last-of-type) {
                 margin-bottom: 5px;
