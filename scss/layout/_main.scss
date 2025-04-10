@@ -16,4 +16,26 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: variables.$valar) {
+        max-width: variables.$wizard;
+    }
+
+    @media (max-width: variables.$elf) {
+        max-width: variables.$man;
+    }
+
+    @media (max-width: variables.$wizard) {
+        max-width: variables.$dwarf;
+    }
+
+    @media (max-width: variables.$man) {
+        max-width: variables.$hobbit;
+    }
+
+    @media (max-width: variables.$dwarf) {
+        max-width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
