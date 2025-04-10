@@ -18,6 +18,9 @@
         display: flex;
         align-items: center;
         font-size: 30px;
+        @media screen and (max-width: variables.$elf) {
+            font-size: 25px;
+        }
 
         &:after {
             content: url(/public/assets/icons/icon-clock.svg);
@@ -26,6 +29,10 @@
             height: auto;
             position: relative;
             margin-left: 15px;
+            @media screen and (max-width: variables.$elf) {
+                width: 20px;
+                margin-left: 10px;
+            }
         }
     }
 }
