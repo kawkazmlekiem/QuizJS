@@ -1,16 +1,21 @@
 @use '../variables';
 
 .quiz {
-    background-color: rgba(variables.$black, .4);
+    background-color: rgba(variables.$black, .2);
     backdrop-filter: blur(10px);
-    padding: 50px;
+    padding: 30px 50px;
     border-top: variables.$b2;
     border-left: variables.$b3;
     border-radius: 10px;
     box-shadow: variables.$bs2;
 
     &_question {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+
+        #question {
+            font-size: 30px;
+            margin-top: 0;
+        }
     }
 
     &_answers {
@@ -28,7 +33,9 @@
             }
 
             &:hover {
-                background-color: variables.$navy;
+                background-color: rgba(variables.$black, .3);
+                color: variables.$white;
+                cursor: pointer;
             }
         }
     }
